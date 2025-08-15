@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; 
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav a {
+    padding: 0px 20px;
+    color: #fff; 
+}
+.logo {
+    color: #fff;
+    font-weight: 500;
+    font-size: large;
+}
+.logo:hover {
+    text-shadow: 0 0 10px orangered, 
+                 0 0 20px orangered, 
+                 0 0 40px orangered, 
+                 0 0 80px orangered;
+}
+.name {
+    color: orangered;
+}
+nav a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+.content {
+    max-width: 50%; 
+}
+.home h1, .home h2, .home p {
+    margin-bottom: 5px;
+}
+.myself{
+    width: 300px;
+    border-radius: 50%; 
+    margin-left: 50px;
+}
+.naming{
+    color: orangered;
+}
+.about{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.about h2{
+    color: orangered;
+}
+.aboutMe {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #fff;
+    padding: 20px;
+    text-align:center;
+}
+.aboutMe h1 {
+    color: orangered;
+    margin-bottom: 10px;
+}
+.aboutMe p{
+    max-width: 50%;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.skills ul li{
+    background-color: slategrey;
+    padding:20px 20px;
+    display: inline-block;
+    justify-content: space-between;
+}
+.skills h1, .skills ul {
+    padding:20px 20px;
+}
+.education{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.education p{
+    padding:20px 20px;
+    display: inline-block;
+    justify-content: space-between;
+}
+.experience{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.experience p{
+    padding:20px 20px;
+    display: inline-block;
+    justify-content: space-between;
+}
+.projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.projects h1{
+    padding:20px 0;
+    color:orangered;
+}
+.projectsContent{
+    padding:10px 0px;
+    width:50%;
+}
+.projectsContent h3, .projectsContent p, .projectsContent img{
+    padding:5px;
+}
+.projectsContent img{
+    margin-left: 150px;
+}
+.resume{
+    display: flex;
+    align-items: center;
+    color: orangered;
+    flex-direction: column;
+}
+.resume h2{
+    padding: 20px 0px;
+}
+.resumeImg{ 
+    width:50%;
+    justify-content: center;
+    padding: 20px 0;
+}
+.download{
+    justify-content: center;
+    padding:30px 30px;
+    font-weight: bolder;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0;
+}
+.contact h1{
+    color: orangered;
+}
+.contact h1, .contact p, .contact a{
+    padding:5px 5px;
+}
+.icons a{
+    margin-right: 10px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding:20px 0;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer p{
+    display: inline-block;
+    justify-content: center;
+}
