@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* home page */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; 
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav a {
+    padding: 0px 20px;
+    color: #fff; 
+}
+.logo {
+    color: #fff;
+    font-weight: 500;
+    font-size: large;
+}
+.logo:hover {
+    text-shadow: 0 0 10px orangered, 
+                 0 0 20px orangered, 
+                 0 0 40px orangered, 
+                 0 0 80px orangered;
+}
+.name {
+    color: orangered;
+}
+nav a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.content {
+    max-width: 50%; 
+}
+.home h1, .home h2, .home p {
+    margin-bottom: 5px;
+}
+.myself{
+    width: 300px;
+    border-radius: 10%; 
+    height: 500px;
+}
+.naming{
+    color: orangered;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0;
+}
+.contact h1{
+    color: orangered;
+}
+.contact h1, .contact p, .contact a{
+    padding:5px 5px;
+}
+.icons a{
+    margin-right: 10px;
+}
+
+/*about page*/
+.about{
+    padding: 40px;
+}
+#webdev{
+    height: 400px;
+    width: 400px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.about1{
+    margin:15px 0;
+}
+
+/* projects page*/
+.projects{
+    margin: 50px;
+}
+.project1, .project2, .project3 {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    padding: 50px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    margin-bottom: 40px; 
+}
+.project1 ,.project3{
+    margin-left: 60px;
+}
+.project2 {
+    margin-left: auto; 
+    margin-right: 60px;
+}
+
+#descp_img{
+    height:200px;
+}
+.box p{
+    margin: 10px 0;
+}
+#view_project{
+    color:orangered;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* resume page */
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+}
+.resume h2{
+    color:orangered;
+}
+#resume-preview{
+    height:50%;
+}
+.resume a{
+    color:orangered;
+    font-weight: bo;
+}
+/* contact page */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+.form{
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+    padding: 50px;
+    width:100%;
+}
+.contact-form h1{
+    color: orangered;
+    text-align: center;
+}
+.contact-form label{
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+.contact-form input, .contact-form textarea{
+    padding:10px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    outline: none;
+}
+.form button{
+    background: orangered;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding:12px;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* footer */
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding:20px 0;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer p{
+    display: inline-block;
+    justify-content: center;
+}
