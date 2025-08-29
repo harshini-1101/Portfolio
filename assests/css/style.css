@@ -15,18 +15,22 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%; 
 }
-nav {
+nav ul{
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    gap: 15px;
 }
-nav a {
-    padding: 0px 20px;
-    color: #fff; 
+nav li{
+    list-style: none;
+}
+nav a{
+    padding: 8px 12px;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 .logo {
     color: #fff;
@@ -45,6 +49,15 @@ nav a {
 nav a:hover {
     color: orangered;
     text-decoration: underline;
+}
+nav a.active{
+    color : orangered;
+}
+.toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
 }
 .home {
     display: flex;
@@ -67,22 +80,6 @@ nav a:hover {
     color: orangered;
 }
 
-.contact{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding:10px 0;
-}
-.contact h1{
-    color: orangered;
-}
-.contact h1, .contact p, .contact a{
-    padding:5px 5px;
-}
-.icons a{
-    margin-right: 10px;
-}
-
 /*about page*/
 .about{
     padding: 40px;
@@ -90,6 +87,9 @@ nav a:hover {
 #webdev{
     height: 400px;
     width: 400px;
+}
+.content{
+    padding: 25px;
 }
 .intro{
     display: flex;
@@ -108,7 +108,7 @@ nav a:hover {
 .project1, .project2, .project3 {
     display: flex;
     flex-direction: row;
-    max-width: 60%;
+    max-width: 65%;
     padding: 50px;
     background-color: rgb(248, 248, 248);
     border-radius: 10px;
@@ -121,12 +121,18 @@ nav a:hover {
     margin-left: auto; 
     margin-right: 60px;
 }
-
 #descp_img{
+    display: flex;
+    justify-self: center;
+    align-items: center;
     height:200px;
+    margin : 15px;
 }
 .box p{
     margin: 10px 0;
+}
+.project1, .project2, .project3{
+    box-shadow: 5px 5px lightblue;
 }
 #view_project{
     color:orangered;
@@ -206,4 +212,140 @@ footer{
 footer p{
     display: inline-block;
     justify-content: center;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0;
+}
+.contact h1{
+    color: orangered;
+}
+.contact h1, .contact p, .contact a{
+    padding:5px 5px;
+}
+.icons a{
+    margin-right: 10px;
+}
+
+/* drop drown */
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;            
+    max-height: 0;                 
+    transition: max-height 0.3s ease;
+}
+
+.dropdown-menu.open{
+    max-height: 500px;
+}
+.dropdown-menu li a{
+    color: white;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu li a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+
+/* media query */
+/* ----------- Tablet view (max-width: 873px) ----------- */
+@media(max-width: 873px){
+    nav{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .content {
+        max-width: 80%;
+    }
+    .myself {
+        width: 250px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    #webdev{
+        margin-top: 20px;
+        height:300px;
+        width: 300px;
+    }
+    .projects {
+        margin: 20px;
+    }
+    .project1, .project2, .project3 {
+        flex-direction: column;
+        max-width: 70%;
+        margin: 20px auto;
+        padding: 30px;
+    }
+    #resume-preview{
+        height: 600px;
+        width: 500px;
+    }
+}
+
+/* ----------- Mobile view (max-width: 477px) ----------- */
+@media(max-width: 477px){
+    .home {
+        padding: 20px;
+    }
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+    .content {
+        max-width: 100%;
+    }
+    .home h1, .home h2 {
+        font-size: 20px;
+    }
+    .myself {
+        width: 200px;
+        height: 300px;
+    }
+    .intro {
+        padding: 20px;
+        font-size: 13px;
+    }
+    #webdev {
+        width: 250px;
+        height: 250px;
+    }
+    .project1, .project2, .project3 {
+        padding: 20px;
+    }
+    .box h2{
+        font-size: 19px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+    #descp_img {
+        height: 140px;
+        width: 100%;
+    }
+    #resume-preview{
+        height: 450px;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+        font-size: 12px;
+    }
 }

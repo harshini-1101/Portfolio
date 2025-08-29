@@ -1,3 +1,14 @@
+// nav bar responsive
+const toggleBtn = document.querySelector(".toggle_btn");
+const toggleIcon = document.querySelector(".toggle_btn i");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+toggleBtn.onclick = function (){
+    dropdownMenu.classList.toggle("open");
+}
+
+
+// form vaildation
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".contact-form form");
     const nameField = document.getElementById("name");
@@ -5,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageField = document.getElementById("message");
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Stop form from submitting immediately
+        event.preventDefault(); 
 
         const nameValue = nameField.value.trim();
         const emailValue = emailField.value.trim();
