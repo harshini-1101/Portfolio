@@ -259,7 +259,6 @@ footer p{
     color: orangered;
 }
 
-/* media query */
 /* ----------- Tablet view (max-width: 873px) ----------- */
 @media(max-width: 873px){
     nav{
